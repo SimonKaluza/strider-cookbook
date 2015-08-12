@@ -19,6 +19,8 @@
 include_recipe "nodejs::npm"
 include_recipe "mongodb"
 
+package 'git'
+
 git "/opt/strider" do
   repository "git://github.com/Strider-CD/strider.git"
   reference "master"
